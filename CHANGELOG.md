@@ -1,5 +1,8 @@
 ## Changelog
 
+### 1.11.4
+* Allows GregTech machines to have redstone values, allows compatability with Gregic Additions rock breakers
+
 ### 1.11.3 (Hotfix)
 * Removed mechanism to distribute expensive ticks more evenly as it broke JEI multiblock preview - LAGIdiot
 
