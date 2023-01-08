@@ -140,9 +140,7 @@ public abstract class BlockPipe<PipeType extends Enum<PipeType> & IPipeType<Node
 
     @Override
     public boolean shouldCheckWeakPower(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing side) {
-        // The check in World::getRedstonePower in the vanilla code base is reversed. Setting this to false will
-        // actually cause getWeakPower to be called, rather than prevent it.
-        return false;
+        return true;
     }
 
     @Override

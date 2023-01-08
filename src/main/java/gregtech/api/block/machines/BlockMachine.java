@@ -315,9 +315,8 @@ public class BlockMachine extends BlockCustomParticle implements ITileEntityProv
 
     @Override
     public boolean shouldCheckWeakPower(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing side) {
-        // The check in World::getRedstonePower in the vanilla code base is reversed. Setting this to false will
-        // actually cause getWeakPower to be called, rather than prevent it.
-        return false;
+        // Needed for Gregic Additions rock breakers
+        return true;
     }
 
     @Override
